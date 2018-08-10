@@ -1,0 +1,6 @@
+<launch>
+	<node pkg="roomba_move" type="roomba_move_node" name="move_node" output="screen">
+		<param name="map_file" type="string" value="$(find roomba_move)/data/ctrl_room_map.txt" />
+		<param name="num_tags" type="int" value=4 />
+	</node>
+</launch>
